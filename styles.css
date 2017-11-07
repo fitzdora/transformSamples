@@ -1,0 +1,144 @@
+.wrapper1 {
+
+	width: 50%
+	transform: perspective(1000px);
+}
+
+.wrapper1:hover .cube {
+
+	transform: rotate(0);
+}
+
+
+.cube {
+
+	transition: .3;
+	transform: rotateY(40deg);
+	
+
+}
+
+.cube {
+
+	font-size: 3em;
+	font-family: sans-serif;
+	width: 2em;
+	margin: 1.5em auto;
+	transform-style: preserve-3d;
+	transform: rotateX(-40deg) rotateY(32deg);
+}
+
+.side {
+	background-color:#00ffbf;
+	opacity: 0.6;
+	color: white;
+	text-align: center;
+	line-height: 2em;
+	transition: background-color 1s ease-out;
+	border: 1px solid gray;
+	position: absolute;
+	width: 2em;
+	height: 2em;
+
+}
+
+.front:hover {
+
+	background-color: #f4b642;
+	cursor: pointer;
+}
+
+.front { 
+
+	transform:translateZ(1em);
+
+ }
+
+ .left {
+
+ 	transform: rotateY(-90deg) translateZ(1em) ;
+
+ }
+
+
+ .top {
+
+ 	transform: rotateX(90deg) translateZ(1em) ;
+
+ }
+
+ .ball {
+ 
+ 	background-color: pink;
+ 	width: 100px;
+ 	height:100px;
+ 	border-radius: 150px;
+ 	text-align: center;
+ 	transition: transform 2s, background-color 2s, border-radius 2s;
+ }
+
+
+ .ball:hover {
+
+ 	background-color: green;
+ 	border-radius: 0px;
+ 	transform: translateX(100px) rotate(60deg);
+
+
+ }
+
+ .title {
+
+ 	color: green;
+ 	transition: transform 2s, color 2s;
+ }
+
+ .title:hover {
+
+ 	color: pink;
+ 	transform: translateY(100px);
+ }
+
+
+ #foo {
+
+ border-radius: 50px;
+ width: 50px;
+ height: 50px;
+ background-color: red;
+ position: absolute;
+ transition: all 1s;
+ }
+
+ .element {
+ 	 height: 100px;
+ 	 width: 100px;
+ 	 margin: 0, auto;
+ 	 background-color: orange;
+ 	 animation-name: pulse;
+ 	 animation-duration: 1.5s;
+ 	 animation-timing-function: ease-out;
+ 	 animation-delay: 0.5s;
+ 	 animation-direction: alternate;
+ 	 animation-iteration-count: infinite;
+ 	 animation-fill-mode: none;
+ 	 animation-play-state: running;
+ }
+
+ @keyframes pulse {
+
+ 	0%{
+ 		transform: scale(.3);
+ 		background-color: orange;
+ 		border-radius: 100%
+ 	}
+
+ 	50% {
+ 		background-color: yellow;
+ 	}
+
+ 	100% {
+ 		transform: scale(1.5);
+ 		background-color: green;
+ 	}
+ }
