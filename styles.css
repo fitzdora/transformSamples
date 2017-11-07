@@ -1,3 +1,12 @@
+.add h1 {
+
+	margin: 10px
+	color: blue;
+	background-color:#fef5e7;
+	font-family: monospace;
+	border: 1px dashed gray;
+}
+
 .wrapper1 {
 
 	width: 50%
